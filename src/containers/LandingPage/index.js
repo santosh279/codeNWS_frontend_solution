@@ -7,8 +7,8 @@ import './styles.scss';
 function LandingPage() {
 
 
-  if (!isLoad) {
-    return <span>Loading done!</span>
+  if (!isLoaded) {
+    return <span>Loading</span>
   } else {
     return (
       <div className="landing-page">
