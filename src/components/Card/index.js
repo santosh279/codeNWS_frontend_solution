@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.scss';
+import { trimDetails } from '../../Helpers/card-method';
 
 const Card = props => {
   const { data } = props;
@@ -13,7 +14,9 @@ const Card = props => {
             {data.name ? data.name : 'No Name Available'}
           </h5>
           <p className="card-text">
-            {data.details ? data.details : 'No Details Available'}
+            {data.details
+              ? trimDetails(data.details, 100)
+              : 'No Details Available'}
           </p>
         </div>
       </div>
