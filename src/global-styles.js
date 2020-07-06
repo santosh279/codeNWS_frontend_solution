@@ -6,6 +6,7 @@ body{
     font-style: normal;
     font-weight: 400;
     text-transform: none;
+    padding: 1rem;
     .btn{
       font-size: 16px;
       padding: 8px 20px;
@@ -31,6 +32,5 @@ body{
 
 }
 `;
-
 
 export default GlobalStyle;

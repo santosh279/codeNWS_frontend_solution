@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Route path="/" component={LandingPage} />;
+      <Route path="/" component={LandingPage} />
     </>
   );
 }
